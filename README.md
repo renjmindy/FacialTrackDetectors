@@ -21,7 +21,11 @@ Take data in healthcare. It’s diverse and complex. And on top of that, it’s 
 
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/facial-recognition-for-healthcare-disruption-2.png)
 
-With millions of healthcare records breached so far, hospitals are seeking a robust solution to guard the patients’ data. This is where AI comes to aid. Today, one of the key objectives of artificial intelligence in healthcare is to safeguard and transfer sensitive data securely. AI solutions have the power to automate malware analysis and threat intelligence.
+With millions of healthcare records breached so far, hospitals are seeking a robust solution to guard the patients’ data. This is where AI comes to aid. Today, one of the key objectives of artificial intelligence in healthcare is to safeguard and transfer sensitive data securely. AI provides solutions that have the power to automate malware analysis and threat intelligence.
+
+Face recognition is a subset of AI. It is used in healthcare for plenty of purposes. Take a closer look at the key technology use cases:
+
+* 
 
 ## Prerequisites
 
