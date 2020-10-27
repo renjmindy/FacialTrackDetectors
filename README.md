@@ -77,13 +77,13 @@ To use Face Detectors, follow these steps:
 
 ### [Face detection detector](https://github.com/renjmindy/FaceDetectors/tree/master/RegionDetector)
 
-#### **Usage**
+* **Usage**
   
-#### **Procedures**
+* **Procedures**
   
-#### **Files**
+* **Files**
   
-#### **Dataset**
+* **Dataset**
 
 ## Contributing to Face Detectors
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
