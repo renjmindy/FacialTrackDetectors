@@ -9,13 +9,19 @@
 
 ## Motivation
 
-Face detectors are used for `calibration`, `classification`, `detection`, `recognition`, `tracking` and `generation` that allow `classification` being converted into `detection`, `recognition`, `tracking` and `generation`.
+Workforce shortage, heavy workload, and salary disparities have never been more poignant in healthcare than they are today. It’s safe to say that doctors and nurses can’t deliver good care to their patients if they neglect their own health. In the circumstances, vendors and healthcare advisors and workers have high hopes of integrating technology into healthcare. **Technology can ease the workload of healthcare workers and transform the way patients are diagnosed and treated.**
 
-![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_1.png)
+Slowly but surely, Artificial Intelligence (AI), Deep Learning, Machine Learning, the Internet of Things, Natural Language Processing (NLP), and Face Recognition are becoming the new norm in the healthcare sector. Today, healthcare providers can deliver excellent patient care by blending their competencies and innovation.
 
-One of the central problems in `computer vision` is the object detection task. The goal of object detection is to detect the presence of object from a certain set of classes, and locate the exact position in the image. We can informally divide all objects into two big groups: `things` and `stuff`. Things are objects of certain size and shape like cars, bicycles, people, animals, planes. We can specify where object is located in image with a bounding box. Stuff is more likely a region of image which correspond to objects like road, or grass, or sky, or water. It is easier to specify the location of a sky by marking the region in an image, not by a bounding box. Unlike the detection of things, to detect a stuff, it is better to use `semantic image segmentation` methods. Compared to image classification, the output of the detector is each structured object that is usually marked with a bounding box and class label. Object position and class are annotated in ground truth data. To check whether the detection is correct, we compare the predicted bounding box with ground truth one. The metric is intersection over union (aka: **IoU**). It is the ratio of area of intersection of predicted in ground truth bounding boxes to the area of the union on these boxes as shown on the slide. Either IoU is larger than the threshold, then the detection is correct. The larger the threshold, the more precisely detector should localize objects.
+![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/acial-recognition-for-healthcare-disruption-1.png)
 
-![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_2.png)
+The total number of data breaches reported went up to 36.12% annually, from 371 breaches in 2018 to 505 breaches in 2019.
+
+Take data in healthcare. It’s diverse and complex. And on top of that, it’s hard to store and keep safe. Since the healthcare sector generates plenty of data that is an easy target for hackers, AI offers its watchful eye. According to a 2019 Ponemon report, [73% of organizations are understaffed](https://www.domaintools.com/content/2019-ponemon-report-staffing-it-age-automation.pdf) and fail to detect and respond to data breaches fast. [HIPAA Journal](https://www.hipaajournal.com/december-2019-healthcare-data-breach-report/#:~:text=That's%20195.61%25%20more%20than%202018,to%20505%20breaches%20in%202019) stated that 2019 brought about an increase in data breaches. 41,232,527 patient records were disclosed and stolen in 2019.
+
+![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/acial-recognition-for-healthcare-disruption-2.png)
+
+With millions of healthcare records breached so far, hospitals are seeking a robust solution to guard the patients’ data. This is where AI comes to aid. Today, one of the key objectives of artificial intelligence in healthcare is to safeguard and transfer sensitive data securely. AI solutions have the power to automate malware analysis and threat intelligence.
 
 ## Prerequisites
 
@@ -110,6 +116,13 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 ## Project Overview
 
+Face detectors are used for `calibration`, `classification`, `detection`, `recognition`, `tracking` and `generation` that allow `classification` being converted into `detection`, `recognition`, `tracking` and `generation`.
+
+![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_1.png)
+
+One of the central problems in `computer vision` is the object detection task. The goal of object detection is to detect the presence of object from a certain set of classes, and locate the exact position in the image. We can informally divide all objects into two big groups: `things` and `stuff`. Things are objects of certain size and shape like cars, bicycles, people, animals, planes. We can specify where object is located in image with a bounding box. Stuff is more likely a region of image which correspond to objects like road, or grass, or sky, or water. It is easier to specify the location of a sky by marking the region in an image, not by a bounding box. Unlike the detection of things, to detect a stuff, it is better to use `semantic image segmentation` methods. Compared to image classification, the output of the detector is each structured object that is usually marked with a bounding box and class label. Object position and class are annotated in ground truth data. To check whether the detection is correct, we compare the predicted bounding box with ground truth one. The metric is intersection over union (aka: **IoU**). It is the ratio of area of intersection of predicted in ground truth bounding boxes to the area of the union on these boxes as shown on the slide. Either IoU is larger than the threshold, then the detection is correct. The larger the threshold, the more precisely detector should localize objects.
+
+![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_2.png)
 
 ## Needs of this project
 
