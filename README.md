@@ -20,10 +20,23 @@ Before you begin, ensure you have met the following requirements:
 * Do you have modern Nvidia [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit)? 
   There is your video-card model in [list](https://developer.nvidia.com/cuda-gpus) and CUDA capability >= 3.0?
 
-    Yes. You can use it for fast deep learning! In this work we recommend you use tensorflow backend with GPU. Read installation notes with attention to gpu section, install all requirements and then install GPU version tensorflow-gpu.
-    No. CPU is enough for this task, but you have to use only simple model. Read installation notes and install CPU version tensorflow.
+   - Yes. You can use it for fast deep learning! In this work using tensorflow backend with GPU is recommended. Read [installation notes] (https://www.tensorflow.org/install/) with attention to gpu section, install all requirements and then install GPU version `tensorflow-gpu`.
+   - No. CPU is enough for this task, but we have to use only simple model. Read [installation notes](https://www.tensorflow.org/install/) and install CPU version `tensorflow`.
+   
+* It is worth noting that there is a framing from all sides in most of the images. This framing can appreciably worsen the quality of channels alignment. Here, borders on the plates should be detected using `Canny edge detector`, so that we can crop the images according to these edges. The example of using Canny detector implemented in skimage library can be found [here](https://scikit-image.org/docs/dev/auto_examples/edges/plot_canny.html).
+* Important thing in deep learning is `augmentation`. Sometimes, if your model are complex and cool, you can increase quality by using good augmentation.
 
+   - Keras provide good [images preprocessing and augmentation](https://keras.io/api/preprocessing/image/). This preprocessing executes online (on the fly) while learning.
+   - Of course, if you want using samplewise and featurewise `center and std normalization` you should run this transformation on predict stage. But you will use this classifier to fully convolution detector, in this case such transformation quite complicated. As such, it's not recommended to use them in classifier.
+   - For heavy augmentation you can use library [imgaug](https://github.com/aleju/imgaug). If you need, you can use this library in offline manner (simple way) and online manner (hard way). However, hard way is not so hard: you only have to write [python generator](https://wiki.python.org/moin/Generators), which returns image batches, and pass it to [fit_generator](https://keras.io/api/models/model/#fit_generator).
+   
+* For fitting you can use one of Keras optimizer algorithms. [Good overview](https://ruder.io/optimizing-gradient-descent/).
 
+    - To choose best learning rate strategy you should read about `EarlyStopping` and `ReduceLROnPlateau` or `LearningRateScheduler` on [callbacks](https://keras.io/callbacks/) page of keras documentation, it's very useful in deep learning.
+    - If you repeat architecture from some paper, you can find information about good optimizer algorithm and learning rate strategy in this paper. For example, every [keras application](https://keras.io/api/applications/) has link to paper, that describes suitable learning procedure for this specific architecture.    
+
+* 
+    
 ## Installing <project_name>
 
 To install <project_name>, follow these steps:
