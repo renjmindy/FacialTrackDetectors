@@ -13,13 +13,13 @@ Workforce shortage, heavy workload, and salary disparities have never been more 
 
 Slowly but surely, Artificial Intelligence (AI), Deep Learning, Machine Learning, the Internet of Things, Natural Language Processing (NLP), and Face Recognition are becoming the new norm in the healthcare sector. Today, healthcare providers can deliver excellent patient care by blending their competencies and innovation.
 
-![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/acial-recognition-for-healthcare-disruption-1.png)
+![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/facial-recognition-for-healthcare-disruption-1.png)
 
 The total number of data breaches reported went up to 36.12% annually, from 371 breaches in 2018 to 505 breaches in 2019.
 
 Take data in healthcare. It’s diverse and complex. And on top of that, it’s hard to store and keep safe. Since the healthcare sector generates plenty of data that is an easy target for hackers, AI offers its watchful eye. According to a 2019 Ponemon report, [73% of organizations are understaffed](https://www.domaintools.com/content/2019-ponemon-report-staffing-it-age-automation.pdf) and fail to detect and respond to data breaches fast. [HIPAA Journal](https://www.hipaajournal.com/december-2019-healthcare-data-breach-report/#:~:text=That's%20195.61%25%20more%20than%202018,to%20505%20breaches%20in%202019) stated that 2019 brought about an increase in data breaches. 41,232,527 patient records were disclosed and stolen in 2019.
 
-![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/acial-recognition-for-healthcare-disruption-2.png)
+![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/facial-recognition-for-healthcare-disruption-2.png)
 
 With millions of healthcare records breached so far, hospitals are seeking a robust solution to guard the patients’ data. This is where AI comes to aid. Today, one of the key objectives of artificial intelligence in healthcare is to safeguard and transfer sensitive data securely. AI solutions have the power to automate malware analysis and threat intelligence.
 
