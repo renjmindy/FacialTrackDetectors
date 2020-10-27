@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/scottydocs/README-template.md?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/scottydocs?style=social) --->
 
-Face detectors are used for `calibration`, `classification`, `detection`, `recognition`, `tracking` and `generation` that allow `classification` being converted into `detection`, `recognition` and `tracking`.
+Face detectors are used for `calibration`, `classification`, `detection`, `recognition`, `tracking` and `generation` that allow `classification` being converted into `detection`, `recognition`, `tracking` and `generation`.
 
 One of the central problems in `computer vision` is the object detection task. The goal of object detection is to detect the presence of object from a certain set of classes, and locate the exact position in the image. We can informally divide all objects into two big groups: `things` and `stuff`. Things are objects of certain size and shape like cars, bicycles, people, animals, planes. We can specify where object is located in image with a bounding box. Stuff is more likely a region of image which correspond to objects like road, or grass, or sky, or water. It is easier to specify the location of a sky by marking the region in an image, not by a bounding box. Unlike the detection of things, to detect a stuff, it is better to use `semantic image segmentation` methods. Compared to image classification, the output of the detector is each structured object that is usually marked with a bounding box and class label. Object position and class are annotated in ground truth data. To check whether the detection is correct, we compare the predicted bounding box with ground truth one. The metric is intersection over union (aka: **IoU**). It is the ratio of area of intersection of predicted in ground truth bounding boxes to the area of the union on these boxes as shown on the slide. Either IoU is larger than the threshold, then the detection is correct. The larger the threshold, the more precisely detector should localize objects.
 
@@ -15,9 +15,14 @@ One of the central problems in `computer vision` is the object detection task. T
 
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `<coding_language/dependency/requirement_1>`
-* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-* You have read `<guide/link/documentation_related_to_project>`.
+* You should install `keras`, `matplotlib`, `numpy`, `scikit-learn` and `scikit-image`
+* You have a `<Windows/Linux/Mac>` machine.
+* Do you have modern Nvidia [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit)? 
+  There is your video-card model in [list](https://developer.nvidia.com/cuda-gpus) and CUDA capability >= 3.0?
+
+    Yes. You can use it for fast deep learning! In this work we recommend you use tensorflow backend with GPU. Read installation notes with attention to gpu section, install all requirements and then install GPU version tensorflow-gpu.
+    No. CPU is enough for this task, but you have to use only simple model. Read installation notes and install CPU version tensorflow.
+
 
 ## Installing <project_name>
 
