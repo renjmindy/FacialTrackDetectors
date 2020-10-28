@@ -279,7 +279,12 @@ results_val = model.evaluate(X_val, Y_val)
 21/21 [==============================] - 1s 29ms/step - loss: 0.0570 - accuracy: 0.9785
 ```
 
-**Now we should replace fully-connected layers with 1×1 convolution layers.**
+- Transfer Learning
+
+If one classification architecture with high validation score has been prepared, we can use this architecture for detection. Convert classification architecture to fully convolution neural network (FCNN), that returns heatmap of activation. **Now we should replace fully-connected layers with 1×1 convolution layers.** In brief:
+
+1. 1×1 convolution layer is equivalent of fully connected layer.
+2. 1×1 convolution layers can be used to get activation map of classification network in `sliding window` manner.
 
 ##### Head before convert
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_10.png)
@@ -325,6 +330,8 @@ Trainable params: 552,194
 Non-trainable params: 0
 _________________________________________________________________
 ```
+
+Require weight being transferred from fully connected layers to fully convolution layers: Then we should write function that copy weights from classification model to fully convolution model. Convolution weights may be obtained from copy without modification, fully-connected layer weights should be reshaped before being copied.
 
 - writeup/reporting
 
