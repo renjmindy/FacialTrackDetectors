@@ -245,20 +245,16 @@ results_val = model.evaluate(X_val, Y_val)
 
 - writeup/reporting
 
-![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_3.png)
-![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_4.png)
+* detector score
 
-- detector score
+  - Training samples:
 
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_12.png)
-
-* Training samples:
-
-![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_13.png)
-![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_14.png)
+![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_3.png)
+![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_4.png)
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_15.png)
 
-* Testing samples:
+  - Testing samples:
 
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_16.png)
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_17.png)
