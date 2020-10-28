@@ -27,13 +27,20 @@ Face recognition is a subset of AI. It is used in healthcare for plenty of purpo
 
 * **Patient Check-in and Check-Out Procedures:**
 
-...Patient identification solutions have recently gained momentum. They simplify the whole patient check-in process and free hospital personnel from paperwork.
+⋅⋅⋅Patient identification solutions have recently gained momentum. They simplify the whole patient check-in process and free hospital personnel from paperwork.
 
 * **Diagnosing Diseases and Conditions Using Face Recognition:**
 
-...Face recognition has hovered almost all healthcare domains and the diagnostic process is no exсeption. Healthcare evangelists and advisors claim that in the coming years, [health mirrors](https://www.theguardian.com/technology/2012/jan/22/medical-mirror-ming-zher-poh) will be in high gear. 
+⋅⋅⋅Face recognition has hovered almost all healthcare domains and the diagnostic process is no exсeption. Healthcare evangelists and advisors claim that in the coming years, [health mirrors](https://www.theguardian.com/technology/2012/jan/22/medical-mirror-ming-zher-poh) will be in high gear. 
 
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/facial-recognition-for-healthcare-disruption-5.jpg)
+
+* **Face Recognition Against COVID-19:**
+
+⋅⋅⋅As the pandemic sweeps the world, healthcare advisors are seeking a way to stop the spread of the deadly virus. AI and face recognition technologies are at the frontline to make it happen. If you want to understand how can AI be used in healthcare to win the war against the coronavirus, take a closer look:
+
+![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/facial-recognition-for-healthcare-disruption-3.png)
+
 
 ## Prerequisites
 
