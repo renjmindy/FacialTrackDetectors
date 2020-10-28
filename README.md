@@ -200,7 +200,7 @@ One of the central problems in `computer vision` is the object detection task. T
 
 ### Face Detection Detectors
 
-- data exploration/descriptive statistics
+* data exploration/descriptive statistics
 
 ```
 print(len(train_images),len(train_bboxes),len(train_shapes))
@@ -215,14 +215,14 @@ print(X_val.shape,Y_val.shape)
 (652, 32, 32, 3) (652, 2)
 ```
 
-- data processing/cleaning
+* data processing/cleaning
 
-* label == 1 (w/ face)
+  - label == 1 (w/ face)
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_5.png)
-* label == 0 (w/o face)
+  - label == 0 (w/o face)
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_6.png)
 
-- statistical modeling
+* statistical modeling
 
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_7.png)
 
@@ -279,7 +279,7 @@ results_val = model.evaluate(X_val, Y_val)
 21/21 [==============================] - 1s 29ms/step - loss: 0.0570 - accuracy: 0.9785
 ```
 
-- Transfer Learning
+* Transfer Learning
 
 If one classification architecture with high validation score has been prepared, we can use this architecture for detection. Convert classification architecture to fully convolution neural network (FCNN), that returns heatmap of activation. **Now we should replace fully-connected layers with 1×1 convolution layers.** In brief:
 
@@ -335,7 +335,7 @@ _________________________________________________________________
 
 Require weight being transferred from fully connected layers to fully convolution layers: Then we should write function that copy weights from classification model to fully convolution model. Convolution weights may be obtained from copy without modification, fully-connected layer weights should be reshaped before being copied.
 
-- writeup/reporting
+* writeup/reporting
 
 * detector score
 
