@@ -225,6 +225,49 @@ print(X_val.shape,Y_val.shape)
 - statistical modeling
 
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_7.png)
+
+Model: "functional_1"
+
+Layer (type)                 Output Shape              Param #   
+
+input_1 (InputLayer)         [(None, 32, 32, 3)]       0         
+
+conv2d (Conv2D)              (None, 32, 32, 32)        896       
+
+re_lu (ReLU)                 (None, 32, 32, 32)        0         
+
+max_pooling2d (MaxPooling2D) (None, 16, 16, 32)        0         
+
+conv2d_1 (Conv2D)            (None, 16, 16, 64)        18496     
+
+re_lu_1 (ReLU)               (None, 16, 16, 64)        0         
+
+max_pooling2d_1 (MaxPooling2 (None, 8, 8, 64)          0         
+
+flatten (Flatten)            (None, 4096)              0         
+
+dense (Dense)                (None, 128)               524416    
+
+re_lu_2 (ReLU)               (None, 128)               0         
+
+dropout (Dropout)            (None, 128)               0         
+
+dense_1 (Dense)              (None, 64)                8256      
+
+re_lu_3 (ReLU)               (None, 64)                0  
+
+dropout_1 (Dropout)          (None, 64)                0   
+
+dense_2 (Dense)              (None, 2)                 130 
+
+softmax (Softmax)            (None, 2)                 0   
+
+Total params: 552,194
+
+Trainable params: 552,194
+
+Non-trainable params: 0
+
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_8.png)
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_9.png)
 
