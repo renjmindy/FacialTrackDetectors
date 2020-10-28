@@ -45,10 +45,10 @@ As the pandemic sweeps the world, healthcare advisors are seeking a way to stop 
 
 Another use case of facial recognition technology in healthcare is real-time emotion tracking. Using facial recognition for mental health purposes, patients can get personalized, patient-centered, efficient, and timely care. The next-gen technology is used to track facial landmarks and cues to interpret the patient’s inner feelings. Face-to-face therapy has a lot to offer:
 
-- fair patient emotion assessment
-- personalized therapy
-- access to mental care (app check ups instead of seeing a mental healthcare provider)
-- real-time harmful habit detection (lip biting, cheek biting, eye rubbing, etc)
+  - fair patient emotion assessment
+  - personalized therapy
+  - access to mental care (app check ups instead of seeing a mental healthcare provider)
+  - real-time harmful habit detection (lip biting, cheek biting, eye rubbing, etc)
 
 ## Prerequisites
 
