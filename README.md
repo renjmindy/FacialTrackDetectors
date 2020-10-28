@@ -104,19 +104,43 @@ To start Jupyter Notebooks run `jupyter notebook` on Mac/Linux or "Jupyter Noteb
 
 After that you should see a Jupyter page in your browser.
 
-## Using Face Detectors
+## Getting started with using Face Detectors
 
-To use Face Detectors, follow these steps:
+To use Face Detectors, clone repositories (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)) as follows:
 
 ### [Face detection detector](https://github.com/renjmindy/FaceDetectors/tree/master/RegionDetector)
 
 * **Usage**
+
+Clone source and data from [clone Face detection detector](https://github.com/renjmindy/FaceDetectors/tree/master/RegionDetector), open ./[Face_Detection.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/Face_Detection.ipynb) and do task. It's easy.
   
-* **Procedures**
+* **[Procedures](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/Face_Detection.ipynb)**
+
+ - Prepare data: extract positive and negative samples from data.
+ - Classifier training: 
+   + add some layers into pre-trained model.
+   + run fitting and validation accuracy expected to exceed 90%.
+   + select epoch with best validation loss and load this epoch weight.
+ - FCNN (Fully Connected Neural Network) model: build fcnn model, write `copy_weight` function and visualized `activation heat map`.
+ - Detector: write `get_bboxes_and_decision_function` and visualized `predicted bboxes`
+ - Precision/recall curve: implement precision/recall curve and plot it.
+ - Threshold: 
+   + find point that corresponds to recall=0.85 
+   + Precision/recall graph should stop at recall=0.85
+ - Detector score: on test dataset detection score (in graph header) should be 0.85 or greater.
+
+* **Files** This [repository](https://github.com/renjmindy/FaceDetectors/tree/master/RegionDetector) consist of multiple files:
   
-* **Files**
-  
+ - `Face_Detection.ipynb` -- main task, read and do.
+ - `get_data.py` -- script to download data for task, run automatically from main task. You don't need download data manually.
+ - `scores.py` -- scores, which are using in main task.
+ - `graph.py` -- graph plotting and image showing functions.
+ - `prepare_data.ipynb` -- prepare data to train and test, you may run this script and repeat learning-test procedure to make sure that model haven't over-fitting.   
 * **Dataset**
+
+- Raw Data is being kept [FDDB dataset](http://vis-www.cs.umass.edu/fddb/).
+
+- Data pre-processing/transformation scripts are being kept, defined in ./[prepare_data.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/prepare_data.ipynb) and explained in ./[Face_Detection.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/Face_Detection.ipynb)
 
 ## Contributing to Face Detectors
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
@@ -159,19 +183,6 @@ One of the central problems in `computer vision` is the object detection task. T
 - statistical modeling
 - writeup/reporting
 - etc. (be as specific as possible)
-
-## Getting Started
-
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
-
-    *If using offline data mention that and how they may obtain the data from the froup)*
-    
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
-
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
-5. Follow setup [instructions](Link to file)
 
 ## Featured Notebooks/Analysis/Deliverables
 
