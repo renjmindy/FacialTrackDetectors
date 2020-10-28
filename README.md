@@ -118,7 +118,7 @@ Clone source and data from [clone Face detection detector](https://github.com/re
 
   - Prepare data: extract positive and negative samples from data.
   - Classifier training: 
-    + add some layers into pre-trained model.
+    + build convolutional neural network model by adding layers into model.
     + run fitting and validation accuracy expected to exceed 90%.
     + select epoch with best validation loss and load this epoch weight.
   - FCNN (Fully Connected Neural Network) model: build fcnn model, write `copy_weight` function and visualized `activation heat map`.
@@ -136,10 +136,32 @@ Clone source and data from [clone Face detection detector](https://github.com/re
   - `scores.py` -- scores, which are using in main task.
   - `graph.py` -- graph plotting and image showing functions.
   - `prepare_data.ipynb` -- prepare data to train and test, you may run this script and repeat learning-test procedure to make sure that model haven't over-fitting.   
+  
 * **Dataset**
 
   - Raw Data is being kept [FDDB dataset](http://vis-www.cs.umass.edu/fddb/).
   - Data pre-processing/transformation scripts are being kept, defined in ./[prepare_data.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/prepare_data.ipynb) and explained in ./[Face_Detection.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/Face_Detection.ipynb)
+
+### [Face Recognition detector](https://github.com/renjmindy/FaceDetectors/tree/master/TrackDetector)
+
+* **Usage**
+
+Clone source and data from [clone Face recognition detector](https://github.com/renjmindy/FaceDetectors/tree/master/TrackDetector), open ./[Face_Recognition.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/TrackDetector/Face_Recognition_task.ipynb) and do task. It's easy.
+
+* **[Procedures](https://github.com/renjmindy/FaceDetectors/blob/master/TrackDetector/Face_Recognition_task.ipynb)**
+
+  - Prepare data: [unpack](https://github.com/renjmindy/FaceDetectors/blob/master/TrackDetector/get_data.py) Face_Recognition_data.zip to extract [Face Recognition Images](https://github.com/renjmindy/FaceDetectors/tree/master/TrackDetector/Face_Recognition_data). implement `load_image_data` and `load_video_data` funtions. visualize training and testing samples, respectively.
+  - Prepare training: implement `preprocess_imgs` function to detect face, find facial keypoints, and then crop and normalize the image according to these keypoints. 
+  - Classifier training: 
+    + load pre-trained model in which we can select the last hidden layer as feature extractor to get descriptors of the faces.
+    + build `kNN Classifier` class that include `initialization`, `fit`, `classify_image` and `classify_video`. 
+    + run fitting and validation accuracy expected to exceed 90%.
+ 
+* **Files** This [repository](https://github.com/renjmindy/FaceDetectors/tree/master/TrackDetector) consist of multiple files:
+  
+  - `Face_Reconition_task.ipynb` -- main task, read and do.
+  - `get_data.py` -- script to download data for task, run automatically from main task. You don't need download data manually.
+  - `Face_Recognition_data` -- image raw data used for image and video classification as well
 
 ## Contributing to Face Detectors
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
@@ -185,8 +207,6 @@ One of the central problems in `computer vision` is the object detection task. T
 
 ## Featured Notebooks/Analysis/Deliverables
 
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
 * [Blog Post](link)
 
 ## Contact
