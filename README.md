@@ -116,31 +116,30 @@ Clone source and data from [clone Face detection detector](https://github.com/re
   
 * **[Procedures](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/Face_Detection.ipynb)**
 
- - Prepare data: extract positive and negative samples from data.
- - Classifier training: 
-   + add some layers into pre-trained model.
-   + run fitting and validation accuracy expected to exceed 90%.
-   + select epoch with best validation loss and load this epoch weight.
- - FCNN (Fully Connected Neural Network) model: build fcnn model, write `copy_weight` function and visualized `activation heat map`.
- - Detector: write `get_bboxes_and_decision_function` and visualized `predicted bboxes`
- - Precision/recall curve: implement precision/recall curve and plot it.
- - Threshold: 
-   + find point that corresponds to recall=0.85 
-   + Precision/recall graph should stop at recall=0.85
- - Detector score: on test dataset detection score (in graph header) should be 0.85 or greater.
+  - Prepare data: extract positive and negative samples from data.
+  - Classifier training: 
+    + add some layers into pre-trained model.
+    + run fitting and validation accuracy expected to exceed 90%.
+    + select epoch with best validation loss and load this epoch weight.
+  - FCNN (Fully Connected Neural Network) model: build fcnn model, write `copy_weight` function and visualized `activation heat map`.
+  - Detector: write `get_bboxes_and_decision_function` and visualized `predicted bboxes`.
+  - Precision/recall curve: implement precision/recall curve and plot it.
+  - Threshold: 
+    + find point that corresponds to recall=0.85 
+    + Precision/recall graph should stop at recall=0.85
+  - Detector score: on test dataset detection score (in graph header) should be 0.85 or greater.
 
 * **Files** This [repository](https://github.com/renjmindy/FaceDetectors/tree/master/RegionDetector) consist of multiple files:
   
- - `Face_Detection.ipynb` -- main task, read and do.
- - `get_data.py` -- script to download data for task, run automatically from main task. You don't need download data manually.
- - `scores.py` -- scores, which are using in main task.
- - `graph.py` -- graph plotting and image showing functions.
- - `prepare_data.ipynb` -- prepare data to train and test, you may run this script and repeat learning-test procedure to make sure that model haven't over-fitting.   
+  - `Face_Detection.ipynb` -- main task, read and do.
+  - `get_data.py` -- script to download data for task, run automatically from main task. You don't need download data manually.
+  - `scores.py` -- scores, which are using in main task.
+  - `graph.py` -- graph plotting and image showing functions.
+  - `prepare_data.ipynb` -- prepare data to train and test, you may run this script and repeat learning-test procedure to make sure that model haven't over-fitting.   
 * **Dataset**
 
-- Raw Data is being kept [FDDB dataset](http://vis-www.cs.umass.edu/fddb/).
-
-- Data pre-processing/transformation scripts are being kept, defined in ./[prepare_data.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/prepare_data.ipynb) and explained in ./[Face_Detection.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/Face_Detection.ipynb)
+  - Raw Data is being kept [FDDB dataset](http://vis-www.cs.umass.edu/fddb/).
+  - Data pre-processing/transformation scripts are being kept, defined in ./[prepare_data.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/prepare_data.ipynb) and explained in ./[Face_Detection.ipynb](https://github.com/renjmindy/FaceDetectors/blob/master/RegionDetector/Face_Detection.ipynb)
 
 ## Contributing to Face Detectors
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
