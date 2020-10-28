@@ -25,10 +25,10 @@ With millions of healthcare records breached so far, hospitals are seeking a rob
 
 Face recognition is a subset of AI. It is used in healthcare for plenty of purposes. Take a closer look at the key technology use cases:
 
-* Patient Check-in and Check-Out Procedures
-Patient identification solutions have recently gained momentum. They simplify the whole patient check-in process and free hospital personnel from paperwork.
-* Diagnosing Diseases and Conditions Using Face Recognition
-Face recognition has hovered almost all healthcare domains and the diagnostic process is no exсeption. Healthcare evangelists and advisors claim that in the coming years, [health mirrors](https://www.theguardian.com/technology/2012/jan/22/medical-mirror-ming-zher-poh) will be in high gear. 
+* **Patient Check-in and Check-Out Procedures:**
+...Patient identification solutions have recently gained momentum. They simplify the whole patient check-in process and free hospital personnel from paperwork.
+* **Diagnosing Diseases and Conditions Using Face Recognition:**
+...Face recognition has hovered almost all healthcare domains and the diagnostic process is no exсeption. Healthcare evangelists and advisors claim that in the coming years, [health mirrors](https://www.theguardian.com/technology/2012/jan/22/medical-mirror-ming-zher-poh) will be in high gear. 
 
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/facial-recognition-for-healthcare-disruption-5.jpg)
 
