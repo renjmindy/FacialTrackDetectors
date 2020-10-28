@@ -286,7 +286,7 @@ If one classification architecture with high validation score has been prepared,
 1. 1×1 convolution layer is equivalent of fully connected layer.
 2. 1×1 convolution layers can be used to get activation map of classification network in `sliding window` manner.
 
-We propose replace last fully connected layer with softmax actiovation to convolution layer with linear activation. It will be usefull to find good threshold. Of course, we can use softmax activation.
+We propose replace last fully connected layer with `softmax` actiovation to convolution layer with `linear` activation. It will be usefull to find good threshold. Of course, we can use `softmax` activation that follows by fully convolution neural network.
 
 ##### Head before convert
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_10.png)
