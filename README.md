@@ -84,6 +84,7 @@ To install Face Detectors, follow these steps:
 ```
 To install Docker container with all necessary software installed, follow
 ```
+
 [instructions](https://hub.docker.com/r/zimovnov/coursera-aml-docker) After that you should see a Jupyter page in your browser.
 
 ### Windows:
@@ -95,11 +96,13 @@ We highly recommend to install docker environment, but if it's not an option, yo
 * First, install Anaconda with **Python 3.5+** from [here](https://www.anaconda.com/products/individual).
 * Download `conda_requirements.txt` from [here](https://github.com/ZEMUSHKA/coursera-aml-docker/blob/master/conda_requirements.txt).
 * Open terminal on Mac/Linux or "Anaconda Prompt" in Start Menu on Windows and run:
+
 ```
 conda config --append channels conda-forge
 conda config --append channels menpo
 conda install --yes --file conda_requirements.txt
 ```
+
 To start Jupyter Notebooks run `jupyter notebook` on Mac/Linux or "Jupyter Notebook" in Start Menu on Windows.
 
 After that you should see a Jupyter page in your browser.
@@ -197,6 +200,8 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 * TensorFlow
 * Scikit-learn
 * Dlib from both Python and C++ 
+* Matplotlib 
+* NumPy
 
 ## Project Overview
 
