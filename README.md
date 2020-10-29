@@ -193,7 +193,7 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 ### Technologies
 
-* Traditional Image Processing Techniques, e.g. use of OpenCV, skimage
+* Traditional Image Processing Techniques, e.g. use of OpenCV, Scikit-image (skimage)
 * Python (3.x)
 * Pandas, jupyter
 * Keras (2.2 or higher)
@@ -203,6 +203,7 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 * Dlib from both Python and C++ 
 * Matplotlib 
 * NumPy
+* Imageio (substitution for scipy.misc)
 
 ## Project Overview
 
