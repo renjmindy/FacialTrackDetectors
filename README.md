@@ -194,10 +194,11 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 ### Technologies
 
 * Traditional Image Processing Techniques, e.g. use of OpenCV, skimage
-* Python
+* Python (3.x)
 * Pandas, jupyter
-* Keras
-* TensorFlow
+* Keras (2.2 or higher)
+* TensorFlow (as backend)
+* TensorFlow.compat.v1 (disable_v2_behavior)
 * Scikit-learn
 * Dlib from both Python and C++ 
 * Matplotlib 
