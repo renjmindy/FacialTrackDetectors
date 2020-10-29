@@ -215,7 +215,7 @@ One of the central problems in `computer vision` is the object detection task. T
 
 ## Needs of Face Detectors
 
-### Face Detection Detectors
+### [Face detection detector](https://github.com/renjmindy/FaceDetectors/tree/master/RegionDetector)
 
 * data exploration/descriptive statistics
 
