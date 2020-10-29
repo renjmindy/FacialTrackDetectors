@@ -176,15 +176,27 @@ To contribute to Face Detectors, follow these steps:
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 ### Methods Used
-* Deep Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+
+* Object Key-point Regression
+* Semantic Segmentation
+* Object Detection/Classification
+* Multi-layered Perceptrons (MLPs)
+* Convolution Neural Networks (CNN), e.g. VGG16, Inception-V3, ResNet, MobileNet, etc
+* Transfer Learning
+* Gradient Descent
+* Backpropagation
+* Overfitting
+* Probability
 
 ### Technologies
+
+* Traditional Image Processing Techniques, e.g. use of OpenCV, skimage
 * Python
 * Pandas, jupyter
-* etc. 
+* Keras
+* TensorFlow
+* Scikit-learn
+* Dlib from both Python and C++ 
 
 ## Project Overview
 
