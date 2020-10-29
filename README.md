@@ -370,9 +370,12 @@ Require weight being transferred from fully connected layers to fully convolutio
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_14.png)
 ![fd](https://github.com/renjmindy/FaceDetectors/blob/master/images/face_15.png)
 
-## Featured Notebooks/Analysis/Deliverables
+## Featured Notebooks/Analysis/Deliverables/Blog Posts
 
-* [Blog Post](link)
+### Blog Posts
+* [When do we need CNN to tackle computer vision tasks?](https://renjmindy.github.io/why_do_i_decide_to_be_a_data_scientist)
+* [Where do we implement tricks to help use pretrained neural network?](https://renjmindy.github.io/seattle_housing_project)
+* [Where do we implement tricks to help train very deep neural network?](https://renjmindy.github.io/covid-19_and_safety_on_wheels_in_chicago)
 
 ## Contact
 
