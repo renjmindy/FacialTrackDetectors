@@ -59,7 +59,7 @@ Before you begin, ensure you have met the following requirements:
 * Do you have modern Nvidia [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit)? 
   There is your video-card model in [list](https://developer.nvidia.com/cuda-gpus) and CUDA capability >= 3.0?
 
-   - Yes. You can use it for fast deep learning! In this work using tensorflow backend with GPU is recommended. Read [installation notes] (https://www.tensorflow.org/install/) with attention to gpu section, install all requirements and then install GPU version `tensorflow-gpu`.
+   - Yes. You can use it for fast deep learning! In this work using tensorflow backend with GPU is recommended. Read [installation notes](https://www.tensorflow.org/install/) with attention to gpu section, install all requirements and then install GPU version `tensorflow-gpu`.
    - No. CPU is enough for this task, but we have to use only simple model. Read [installation notes](https://www.tensorflow.org/install/) and install CPU version `tensorflow`.
    
 * It is worth noting that there is a framing from all sides in most of the images. This framing can appreciably worsen the quality of channels alignment. Here, borders on the plates should be detected using `Canny edge detector`, so that we can crop the images according to these edges. The example of using Canny detector implemented in skimage library can be found [here](https://scikit-image.org/docs/dev/auto_examples/edges/plot_canny.html).
