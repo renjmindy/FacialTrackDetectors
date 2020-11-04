@@ -354,9 +354,7 @@ _________________________________________________________________
 
 Require weight being transferred from fully connected layers to fully convolution layers: Then we should write function that copy weights from classification model to fully convolution model. Convolution weights may be obtained from copy without modification, fully-connected layer weights should be reshaped before being copied.
 
-* writeup/reporting
-
-* detector score
+* writeup/reporting via detector score
 
   - Training samples:
 
