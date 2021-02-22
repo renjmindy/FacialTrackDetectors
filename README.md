@@ -183,7 +183,7 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 * Object Key-point Regression
 * Semantic Segmentation
 * Object Detection/Classification
-* Multi-layered Perceptrons (MLPs)
+* Multi-layered Perceptions (MLPs)
 * Convolution Neural Networks (CNN), e.g. VGG16, Inception-V3, ResNet, MobileNet, etc
 * Transfer Learning
 * Gradient Descent
